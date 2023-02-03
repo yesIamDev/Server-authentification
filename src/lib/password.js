@@ -6,4 +6,4 @@ const hashePassword = async (password) => {
     return passwordHash
 }
 
-module.exports = hsdq
+module.exports = hashePassword

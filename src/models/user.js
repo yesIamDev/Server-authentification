@@ -15,13 +15,13 @@ const UserSchema = new mongoose.Schema({
     password : {
         type : String,
         required : true,
-        unique : true,
         validate(v){
             if(!validator.isLength(v, { min : 5, max : 10})) {
                 console.log('Invalid password')
             }
         }
-    }
+    },
+    Token : String
 })
 
 const User = mongoose.model('User', UserSchema)
