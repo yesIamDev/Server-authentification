@@ -17,7 +17,7 @@ const loginUser = async (req,res) => {
         user.Token = authToken
 
         res.status(200).send(user)
-        console.log('Login succes !')
+        console.log('your are login!')
 
     }catch(e){
         console.log(e);
